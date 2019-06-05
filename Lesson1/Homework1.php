@@ -116,7 +116,7 @@ class Software extends Product {
 }
 
 class Bicycle extends Product {
-	public static $bicycleTypes = array('City', 'Hybrid', 'Mountain', 'Race');
+	public static $bicycleTypes = ['City', 'Hybrid', 'Mountain', 'Race'];
 	
 	private $frameSize;
 	private $bicycleType;
