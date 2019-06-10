@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="catalogue">
+            <h1>{{ title }}</h1>        
+            <div class="section">
+            
+            {% for key, value in images %}
+            
+            <div class="product">
+                <div class="product-img">
+                    <a href="photo-gallery.php?image={{ key }}"><img src="{{ value.img_small }}" alt="{{ key }}"/></a>
+                </div>
+            </div>
+            
+            {% endfor %}   
+            
+            </div>
+        </div>
+    </body>
+</html>
